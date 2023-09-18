@@ -13,3 +13,6 @@ There might be some Tomatoes left in the basket after you sort them
 If there are not enough total fruits to follow the rules, return "false".
 All fruits must ALWAYS be counted as whole numbers.
 */
+
+
+// Solution
