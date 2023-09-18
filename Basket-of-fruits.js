@@ -21,3 +21,24 @@ const countBananas = total =>
   total < 66 ? false : 30 * ((total - 66) / 67 | 0) + 9
 
 // or
+
+function countBananas(totalFruits) {
+  for (let bananas = totalFruits; bananas >= 1; bananas--) {
+      let apples = bananas / 3;
+      let oranges = apples + 17;
+      let pears = oranges * 0.6;
+      let lemons = pears + (5 / 6) * pears;
+
+      let total = apples + oranges + pears + lemons + bananas;
+
+      // Ensure all fruits are counted as whole numbers
+      if (Math.floor(apples) === apples && 
+          Math.floor(oranges) === oranges &&
+          Math.floor(pears) === pears &&
+          Math.floor(lemons) === lemons &&
+          total <= totalFruits) {
+          return bananas;
+      }
+  }
+  return false;
+}
