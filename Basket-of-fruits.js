@@ -19,3 +19,5 @@ All fruits must ALWAYS be counted as whole numbers.
 
 const countBananas = total => 
   total < 66 ? false : 30 * ((total - 66) / 67 | 0) + 9
+
+// or
